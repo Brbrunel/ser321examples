@@ -2,6 +2,14 @@ apply plugin: 'java'
 
 description = "Client Server Socket Example"
 
+repositories {
+  mavenCentral()
+}
+
+dependencies{
+  compile 'org.json:json:20171018' // org.json
+}
+
 // Client and Server socket, socket can serve up to three clients
 // The port is defined directly in the Java files. For practice consider changing
 // the tasks to add the port as input to the Gradle task
